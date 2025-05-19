@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap");
 @import "tailwindcss";
 
 @theme 
 {
-	--font-foxe: "Ancizar Sans", sans-serif; 
+	--font-foxe: "Asul", sans-serif; 
 
 	--color-foxe-dark: #131314;
 	--color-foxe-medium: #212123;
