@@ -1,11 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap");
 @import "tailwindcss";
 
-@theme 
-{
-	--font-foxe: "Asul", sans-serif; 
+@theme {
+	--font-foxe: "Asul", sans-serif;
 
 	--color-foxe-dark: #131314;
 	--color-foxe-medium: #212123;
 	--color-foxe-light: #E3E3E3;
+}
+
+
+@layer components 
+{
+	.foxe-header-crown 
+	{
+		@apply absolute left-1/2 top-0 transform -translate-x-1/2 translate-y-[-1.5rem] scale-0 opacity-0 group-hover:translate-y-[-2.3rem] group-hover:scale-100 group-hover:opacity-100 transition-transform duration-50 ease-out h-4 w-auto;
+	}
+	.foxe-header-link
+	{
+		@apply hover:text-pink-600 transition-colors duration-75 ease-out
+	}
 }
