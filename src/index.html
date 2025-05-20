@@ -5,20 +5,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="./output.css" rel="stylesheet">
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&display=swap"
-		rel="stylesheet">
 </head>
 
 <header class="sticky top-0 font-foxe z-50">
-	<nav class="bg-foxe-dark text-foxe-light px-4 py-2 w-full shadow-2xl">
+	<nav class="bg-foxe-dark text-foxe-light px-4 py-1 w-full shadow-2xl">
 		<div class="max-w-screen-xl mx-auto flex items-center">
 
 			<!-- Logo -->
 			<div class="mr-6 flex-shrink-0">
-				<img src="assets/logo-header.png" class="h-28" />
+				<img src="assets/logo-header.png" class="h-24" />
 			</div>
 
 			<!-- Desktop Navigation -->
@@ -53,11 +48,15 @@
 
 <body class="bg-foxe-dark text-foxe-light font-foxe min-h-screen flex flex-col overflow-x-hidden">
 	<main class="py-0 flex-grow pb-32">
+		<!-- Hyperflex Banner -->
 		<div class="relative w-screen h-128 overflow-hidden">
-			<img src="assets/hyperflex.png"
+			<img src="assets/hf-banner.png"
 				class="absolute top-0 left-1/2 h-full -translate-x-1/2 object-cover min-w-full" alt="banner" />
+			<img src="assets/hf-logo.png"
+				class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-2/3 h-auto w-auto max-h-144 px-16" alt="logo" />
 		</div>
-		<div class="max-w-screen-xl mx-auto px-8">
+
+		<div class="max-w-screen-xl mx-auto px-16 pt-16">
 			<h2 class="text-4xl font-bold pt-4"> Hello world! </h2>
 			<p class=" text-xl  pt-4">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -87,13 +86,14 @@
 				fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
 				deserunt mollit anim id est laborum.
 			</p>
+
 		</div>
 	</main>
 
 	<footer class="text-foxe-light bottom-0 w-full pt-4 bg-[url('assets/bg.png')] bg-[length:64px_64px] bg-repeat">
 		<div class="flex flex-col h-28 items-center text-center justify-center">
-			<p>This site does not use any cookies, js or tracking. We respect you :)</p>
-			<p>the fox society © 2025</p>
+			<p>This site does not use any cookies, javascript or tracking. We respect you :)</p>
+			<p>The Fox Society © 2025</p>
 		</div>
 	</footer>
 </body>
