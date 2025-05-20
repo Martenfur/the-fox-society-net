@@ -24,8 +24,8 @@
 			<!-- Right: Line + Links -->
 			<div class="flex flex-col flex-1 text-lg">
 				<!-- Line (aligned with logo) -->
-				<div class="h-10"></div>
-				<div class="h-0.5 bg-foxe-light rounded-2xl mb-2 justify-center"></div>
+				<div class="h-9"></div>
+				<div class="h-[1px] bg-foxe-light rounded-2xl mb-2 justify-center"></div>
 
 				<!-- Links below the line -->
 				<div class="flex space-x-4 items-center">
@@ -46,13 +46,13 @@
 	</nav>
 </header>
 
-<body class="bg-foxe-dark text-foxe-light font-foxe">
-	<main class="py-0">
+<body class="bg-foxe-dark text-foxe-light font-foxe min-h-screen flex flex-col">
+	<main class="py-0 flex-grow pb-32">
 		<div class="relative w-screen h-128 overflow-hidden">
 			<img src="assets/hyperflex.png"
 				class="absolute top-0 left-1/2 h-full -translate-x-1/2 object-cover min-w-full" alt="banner" />
 		</div>
-		<div class="max-w-screen-xl mx-auto">
+		<div class="max-w-screen-xl mx-auto px-8">
 			<h2 class="text-4xl font-bold pt-4"> Hello world! </h2>
 			<p class=" text-xl  pt-4">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -61,14 +61,7 @@
 				fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
 				deserunt mollit anim id est laborum.
 			</p>
-			<p class=" text-xl  pt-4">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-				ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-				fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-				deserunt mollit anim id est laborum.
-			</p>
-			<p class=" text-xl  pt-4">
+						<p class=" text-xl  pt-4">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
 				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
 				ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
@@ -92,7 +85,12 @@
 		</div>
 	</main>
 
-	<footer class="text-white border-grey bottom-0 w-full border-t p-4 text-center">some footer</footer>
+	<footer class="text-foxe-light bottom-0 w-full pt-4 bg-[url('assets/bg.png')] bg-[length:64px_64px] bg-repeat">
+		<div class="flex flex-col h-28 items-center text-center justify-center">
+			<p>This site does not use any cookies, js or tracking. We respect you :)</p>
+			<p>the fox society © 2025</p>
+		</div>
+	</footer>
 </body>
 
 </html>
