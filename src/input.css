@@ -15,7 +15,7 @@
 {
 	.foxe-header-crown 
 	{
-		@apply absolute left-1/2 top-0 transform -translate-x-1/2 translate-y-[-1.5rem] scale-0 opacity-0 group-hover:translate-y-[-2.3rem] group-hover:scale-100 group-hover:opacity-100 transition-transform duration-50 ease-out h-4 w-auto;
+		@apply absolute left-1/2 top-0 transform -translate-x-1/2 translate-y-[-1.5rem] scale-0 opacity-0 group-hover:translate-y-[-2.3rem] group-hover:scale-100 group-hover:opacity-100 transition-transform duration-50 ease-out h-4 w-auto select-none;
 	}
 	.foxe-header-link
 	{
@@ -23,7 +23,7 @@
 	}
 	.foxe-banner-container
 	{
-		@apply relative w-screen h-96 overflow-hidden
+		@apply relative w-screen h-96 overflow-hidden select-none
 	}
 	.foxe-banner
 	{
