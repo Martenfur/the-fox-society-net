@@ -2,5 +2,14 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.7",
     "tailwindcss": "^4.1.7"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "vite": "^6.3.5"
+  },
+  "scripts": {
+    "vite": "vite",
+    "tailwind": "tailwindcss -i input.css -o output.css -w",
+    "dev": "concurrently \"npm run tailwind\" \"npm run vite\""
   }
 }
