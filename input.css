@@ -23,7 +23,7 @@
 	}
 	.foxe-banner-container
 	{
-		@apply relative w-screen h-96 overflow-hidden select-none
+		@apply relative w-screen lg:h-96 h-56 overflow-hidden select-none
 	}
 	.foxe-banner
 	{
@@ -31,6 +31,6 @@
 	}
 	.foxe-banner-logo
 	{
-		@apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-3/5 h-auto w-auto max-h-128 px-16
+		@apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-3/5 h-auto w-auto lg:max-h-128 max-h-70 px-16
 	}
 }
