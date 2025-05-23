@@ -10,7 +10,7 @@ const templatesDir = path.join(__dirname, 'src/templates')
 const pagesDir     = path.join(__dirname, 'src/pages')
 const outputDir    = path.join(__dirname, 'docs') // Root of the repo. Has to be this way for Github Pages to work correctly.
 
-const minifyHtml = true // If true, output html will be minified.
+const minifyHtml = false // If true, output html will be minified.
 
 const generatedNotice = 
 `<!--
