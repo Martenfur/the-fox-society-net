@@ -1,3 +1,7 @@
+// Static Site Generator
+// Takes pages and templates from the source directory and combines them into the output site.
+// See README.md for usage guide.
+
 const fs = require('fs')
 const path = require('path')
 
@@ -5,6 +9,8 @@ const srcDir       = path.join(__dirname, 'src')
 const templatesDir = path.join(__dirname, 'src/templates')
 const pagesDir     = path.join(__dirname, 'src/pages')
 const outputDir    = path.join(__dirname, '') // Root of the repo. Has to be this way for Github Pages to work correctly.
+
+const minifyHtml = true // If true, output html will be minified.
 
 const generatedNotice = 
 `<!--
@@ -37,6 +43,12 @@ function getHtmlFiles(dir)
 	return results
 }
 
+function minify(page)
+{
+	return page.replace(/\s+/g, ' ') // Collapse whitespace
+		.trim() // Remove leading/trailing space
+}
+
 // Load and flatten all templates into a dictionary
 function loadTemplates(templatesDir)
 {
@@ -45,9 +57,7 @@ function loadTemplates(templatesDir)
 
 	templateFiles.forEach(filePath => {
 		const name = path.basename(filePath, '.html')
-		const content = fs.readFileSync(filePath, 'utf8')
-			.replace(/\s+/g, ' ')    // Collapse whitespace
-			.trim()                  // Remove leading/trailing space
+		const content = minify(fs.readFileSync(filePath, 'utf8'))
 		templates[name] = content
 	})
 
@@ -56,12 +66,17 @@ function loadTemplates(templatesDir)
 
 // Replacing {{template_name}} with actual template HTML
 function applyTemplates(content, templates) 
-{
-	return generatedNotice + (content.replace(/{{\s*(\w+)\s*}}/g, (match, name) => {
+{	
+	let generatedPage = content.replace(/{{\s*(\w+)\s*}}/g, (match, name) => {
 		return templates[name] || match
 	})
-	.replace(/\s+/g, ' ') // Collapse whitespace
-	.trim())              // Remove leading/trailing space
+
+	if (minifyHtml)
+	{
+		generatedPage = minify(generatedPage)
+	}
+
+	return generatedNotice + generatedPage
 }
 
 // Write processed HTML to the corresponding location in /out
@@ -82,24 +97,24 @@ function processPages(pagesDir, outDir, templates)
 	});
 }
 
-// Main
+
 function update() 
 {
 	console.log("Regenerating html...")
-
+	
 	const templates = loadTemplates(templatesDir)
 	processPages(pagesDir, outputDir, templates)
-
-	console.log('Done. Output written to ' + outputDir)
+	
+	console.log("Done! Output html written to " + outputDir)
 }
 
+console.log("Starting Static Site Generator")
 // Subscribing to watch the source folder for any changes.
 fs.watch(srcDir, { recursive: true }, (_, filename) => {
-	console.log('Got an update')
 	if (filename)
 	{
 		update()
 	}
 })
-
+console.log("Watching " + srcDir)
 update()
