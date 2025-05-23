@@ -57,9 +57,11 @@ function loadTemplates(templatesDir)
 // Replacing {{template_name}} with actual template HTML
 function applyTemplates(content, templates) 
 {
-	return content.replace(/{{\s*(\w+)\s*}}/g, (match, name) => {
+	return generatedNotice + (content.replace(/{{\s*(\w+)\s*}}/g, (match, name) => {
 		return templates[name] || match
 	})
+	.replace(/\s+/g, ' ') // Collapse whitespace
+	.trim())              // Remove leading/trailing space
 }
 
 // Write processed HTML to the corresponding location in /out
