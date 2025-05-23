@@ -38,6 +38,7 @@ output.css
 src/
 	pages/
 	templates/
+assets/
 ```
 
 - `input.css` - input css with additional components for Tailwind.
@@ -45,6 +46,7 @@ src/
 - `src` - folder with source html files and templates.
 - `pages` - html pages that will become the website.
 - `templates` - reusable templates that will be applied to the pages to generate the full website.
+- `assets` - all media assets go there.
 
 ### template usage
 
