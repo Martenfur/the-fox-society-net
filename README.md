@@ -5,36 +5,33 @@ Landing site for all my stuff.
 ## Setup
 
 1. Download [npm](https://nodejs.org/en/download/)
-2. run `npm install`.
+2. Run `npm install`.
 
 ## Developing
 
-### local server
+To start developing, you need to run the daemon. It consists out of three parts:
 
-To run local web server and tailwind watcher, run:
+- **Tailwind**: a css library that dynamically generates css based on the html classes used in the pages.
+- **Static Site Generator**: a custom script that generates html from pages and templates. This allows to reuse certain html components like header and footer while remaining fully static, which Tailwind does not support on its own. Output html will be put directly to the repository root. Unfortunately, this is necessary for a static hosting like Github Pages - `index.html` has to be in the root.
+- **Vite**: a development server that enables automatic page updates when html changes and hosts the site on a local network so that it can be testted on different devices.
+
+
+To run the daemon, use:
 
 ```
 npm run dev
 ```
 
-This will allow testing on devices on the local network and will provide live updates.
-
 You can also run dev components by themselves:
 
 ```bash
-# Runs Tailwind css generation
 npm run tailwind
-# Rins static site generator
 npm run ssg
-# Runs Vite local http server
 npm run vite
 ```
 
-### static generator
+### project structure
 
-This site uses a custom static site generator to generate html. This allows to reuse certain html components like header and footer while remaining fully static.
-
-Project structure:
 ```
 input.css
 output.css
@@ -49,10 +46,9 @@ src/
 `pages` - html pages that will become the website.
 `templates` - reusable templates that will be applied to the pages to generate the full website.
 
-Output html will be put directly to the repository root. Unfortunately, this is necessary for a static hosting like Github Pages - `index.html` has to be in the root.
+### template usage
 
-**template usage:**
-A tempalte named `foxe.html`:
+A template named `foxe.html`:
 ```html
 <p>I LOVE foxe</p>
 <p>Hell yeah foxe</p>
