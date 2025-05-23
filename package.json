@@ -9,8 +9,8 @@
   },
   "scripts": {
     "ssg": "node ssg.js",
-    "vite": "vite",
-    "tailwind": "tailwindcss -i input.css -o output.css -w",
+    "vite": "vite docs --host",
+    "tailwind": "tailwindcss -i src/pages/input.css -o docs/output.css -w",
     "dev": "concurrently \"npm run ssg\" \"npm run tailwind\" \"npm run vite\""
   }
 }

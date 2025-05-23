@@ -12,9 +12,8 @@ Landing site for all my stuff.
 To start developing, you need to run the daemon. It consists out of three parts:
 
 - **Tailwind**: a css library that dynamically generates css based on the html classes used in the pages.
-- **Static Site Generator**: a custom script that generates html from pages and templates. This allows to reuse certain html components like header and footer while remaining fully static, which Tailwind does not support on its own. Output html will be put directly to the repository root. Unfortunately, this is necessary for a static hosting like Github Pages - `index.html` has to be in the root.
-- **Vite**: a development server that enables automatic page updates when html changes and hosts the site on a local network so that it can be testted on different devices.
-
+- **Static Site Generator**: a custom script that generates html from pages and templates. This allows to reuse certain html components like header and footer while remaining fully static, which Tailwind does not support on its own. Output html will be put in `/docs`
+- **Vite**: a development server that enables automatic page updates when html changes and hosts the site on a local network so that it can be tested on different devices.
 
 To run the daemon, use:
 
@@ -38,7 +37,7 @@ output.css
 src/
 	pages/
 	templates/
-assets/
+docs/
 ```
 
 - `input.css` - input css with additional components for Tailwind.
@@ -46,17 +45,19 @@ assets/
 - `src` - folder with source html files and templates.
 - `pages` - html pages that will become the website.
 - `templates` - reusable templates that will be applied to the pages to generate the full website.
-- `assets` - all media assets go there.
+- `docs` - output directory with the built site.
 
 ### template usage
 
 A template named `foxe.html`:
+
 ```html
 <p>I LOVE foxe</p>
 <p>Hell yeah foxe</p>
 ```
 
 `index.html` that uses the template:
+
 ```html
 <!doctype html>
 <html>

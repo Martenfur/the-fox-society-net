@@ -8,7 +8,7 @@ const path = require('path')
 const srcDir       = path.join(__dirname, 'src')
 const templatesDir = path.join(__dirname, 'src/templates')
 const pagesDir     = path.join(__dirname, 'src/pages')
-const outputDir    = path.join(__dirname, '') // Root of the repo. Has to be this way for Github Pages to work correctly.
+const outputDir    = path.join(__dirname, 'docs') // Root of the repo. Has to be this way for Github Pages to work correctly.
 
 const minifyHtml = true // If true, output html will be minified.
 
