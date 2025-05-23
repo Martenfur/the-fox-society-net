@@ -8,8 +8,9 @@
     "vite": "^6.3.5"
   },
   "scripts": {
+    "ssg": "node ssg.js",
     "vite": "vite",
     "tailwind": "tailwindcss -i input.css -o output.css -w",
-    "dev": "concurrently \"npm run tailwind\" \"npm run vite\""
+    "dev": "concurrently \"npm run ssg\" \"npm run tailwind\" \"npm run vite\""
   }
 }

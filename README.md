@@ -19,10 +19,15 @@ npm run dev
 
 This will allow testing on devices on the local network and will provide live updates.
 
-To run only Tailwind, run:
+You can also run dev components by themselves:
 
-```
+```bash
+# Runs Tailwind css generation
 npm run tailwind
+# Rins static site generator
+npm run ssg
+# Runs Vite local http server
+npm run vite
 ```
 
 ### static generator
