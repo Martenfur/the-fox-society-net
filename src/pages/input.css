@@ -18,23 +18,6 @@
 	--font-hyperflex: "Unispace", sans-serif;
 }
 
-.desktop-only {
-  display: block;
-}
-.mobile-only {
-  display: none;
-}
-
-/* On small screens (mobile), hide video and show image */
-@media screen and (max-width: 768px) {
-  .desktop-only {
-    display: none;
-  }
-  .mobile-only {
-    display: block;
-  }
-}
-
 @layer components 
 {
 	.foxe-header-crown 
