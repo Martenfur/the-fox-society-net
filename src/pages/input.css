@@ -40,4 +40,26 @@
 	{
 		@apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-3/5 h-auto w-auto lg:max-h-128 max-h-70 px-16
 	}
+
+	.foxe-article-container
+	{
+		@apply w-screen lg:h-112 flex flex-col lg:flex-row
+	}
+	.foxe-article-container-reverse
+	{
+		@apply w-screen lg:h-112 flex flex-col-reverse lg:flex-row
+	}
+	.foxe-article-img-container
+	{
+		@apply lg:w-1/2 lg:pr-16 py-8
+	}
+	.foxe-article-img-container-reverse
+	{
+		@apply lg:w-1/2 lg:pl-16 py-8
+	}
+	
+	.foxe-article-text-container
+	{
+		@apply lg:w-1/2 flex items-center justify-center
+	}
 }
