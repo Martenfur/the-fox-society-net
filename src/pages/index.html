@@ -9,48 +9,69 @@
 {{header}}
 
 <body class="bg-foxe-dark text-foxe-light font-foxe min-h-screen flex flex-col overflow-x-hidden">
-	<main class="py-0 flex-grow pb-32">
+	<main class="py-0 flex-grow pb-32 font-hyperflex">
 		<!-- Hyperflex Banner -->
 		<div class="foxe-banner-container">
-			<img src="/assets/hf/banner.png" class="foxe-banner" alt="banner" />
-			<img src="/assets/hf/logo.png" class="foxe-banner-logo" alt="logo" />
+			<a href="https://store.steampowered.com">
+
+				<video class="foxe-banner" muted autoplay playsinline loop preload="auto">
+					<source src="/assets/hf/trailer.webm" type="video/webm" />
+				</video>
+				<img src="/assets/hf/banner.png" class="foxe-banner hidden" alt="banner" />
+				<img src="/assets/hf/logo.png" class="foxe-banner-logo" alt="logo" />
+			</a>
 		</div>
 
-		<div class="max-w-screen-xl mx-auto lg:px-16 px-8 pt-16">
-			<h2 class="text-4xl font-bold pt-4"> Hello world! </h2>
-			<p class=" text-lg pt-4">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-				ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-				fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-				deserunt mollit anim id est laborum.
-			</p>
-			<p class=" text-lg pt-4">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-				ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-				fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-				deserunt mollit anim id est laborum.
-			</p>
-			<p class=" text-lg pt-4">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-				ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-				fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-				deserunt mollit anim id est laborum.
-			</p>
-			<p class=" text-lg pt-4">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-				ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-				fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-				deserunt mollit anim id est laborum.
-			</p>
+		<div class="max-w-screen-xl mx-auto lg:px-16 px-8 pt-10.5 pb-10.5 font-hyperflex">
+			<div class="flex items-center justify-center text-nowrap">
+				<p class="text-5xl hidden lg:block text-foxe-accent">&gt;&gt;&gt;</p>
+				<p class="text-5xl text-foxe-light">|</p>
 
+				<div
+					class="flex items-middle lg:text-3xl text-2xl text-foxe-dark bg-foxe-light hover:bg-foxe-accent px-4 py-3">
+					<p class="">wishlist on</p>
+					<img src="/assets/site/steam.png" class="h-9 pl-5" />
+				</div>
+
+				<p class="text-5xl text-foxe-light">|</p>
+				<p class="text-5xl hidden lg:block text-foxe-accent">&lt;&lt;&lt;</p>
+			</div>
+			<p class="text-5xl lg:hidden text-foxe-accent flex items-center justify-center pt-4">^ ^ ^</p>
+		</div>
+
+
+		<div class="w-screen h-112 flex">
+			<div class="w-1/2 flex items-center justify-center">
+				<div class="text-left p-8">
+					<h1 class="text-4xl font-bold mb-4">Get ready to FLEX</h1>
+					<p class="text-lg">
+						Hyperflex ULTRA is an old-school hardcore runner
+					</p>
+				</div>
+			</div>
+
+			<div class="w-1/2 pr-16 py-8">
+				<img src="/assets/hf/screenshot1.png" alt="Example Image" class="w-full h-full object-cover" />
+			</div>
+		</div>
+
+		<div class="w-screen h-112 flex">
+			<div class="w-1/2 pl-16 py-8">
+				<img src="/assets/hf/screenshot2.png" alt="Example Image" class="w-full h-full object-cover" />
+			</div>
+			<div class="w-1/2 flex items-center justify-center">
+				<div class="text-left p-8">
+					<h1 class="text-4xl font-bold mb-4">Your Title Here</h1>
+					<p class="text-lg">
+						Your content goes here. Add more descriptive text as needed.
+					</p>
+				</div>
+			</div>
 		</div>
 	</main>
 
 	{{footer}}
 
 </body>
+
 </html>

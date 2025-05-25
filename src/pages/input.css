@@ -1,15 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap");
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Unispace";
+  src: url("/assets/hf/unispace-bd.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @theme {
 	--font-foxe: "Asul", sans-serif;
-
 	--color-foxe-dark: #131314;
 	--color-foxe-medium: #212123;
 	--color-foxe-light: #E3E3E3;
 	--color-foxe-accent: #E60076;
+
+	--font-hyperflex: "Unispace", sans-serif;
 }
 
+.desktop-only {
+  display: block;
+}
+.mobile-only {
+  display: none;
+}
+
+/* On small screens (mobile), hide video and show image */
+@media screen and (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+}
 
 @layer components 
 {
