@@ -41,6 +41,11 @@
 		@apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-3/5 h-auto w-auto lg:max-h-128 max-h-70 px-16
 	}
 
+	.foxe-link-button
+	{
+		@apply transform transition-transform duration-200 hover:scale-105 ease-out
+	}
+
 	.foxe-article-container
 	{
 		@apply w-screen lg:h-112 flex flex-col lg:flex-row
