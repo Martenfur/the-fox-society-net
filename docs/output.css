@@ -685,6 +685,11 @@
       max-width: calc(var(--spacing) * 170);
     }
   }
+  .lg\:max-w-256 {
+    @media (width >= 64rem) {
+      max-width: calc(var(--spacing) * 256);
+    }
+  }
   .lg\:flex-col {
     @media (width >= 64rem) {
       flex-direction: column;
