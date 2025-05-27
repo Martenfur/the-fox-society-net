@@ -52,7 +52,7 @@
 	}
 	.foxe-article-container-reverse
 	{
-		@apply w-screen lg:h-112 flex flex-col-reverse lg:flex-row
+		@apply w-screen lg:h-112 flex flex-col lg:flex-row-reverse
 	}
 	.foxe-article-img-container
 	{
