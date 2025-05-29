@@ -233,9 +233,6 @@
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
-  .mt-5 {
-    margin-top: calc(var(--spacing) * 5);
-  }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
@@ -253,6 +250,9 @@
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-16 {
+    margin-bottom: calc(var(--spacing) * 16);
   }
   .ml-3 {
     margin-left: calc(var(--spacing) * 3);
@@ -280,6 +280,9 @@
   }
   .h-9 {
     height: calc(var(--spacing) * 9);
+  }
+  .h-10\.5 {
+    height: calc(var(--spacing) * 10.5);
   }
   .h-16 {
     height: calc(var(--spacing) * 16);
@@ -384,6 +387,9 @@
   }
   .bg-\[url\(\'\/assets\/site\/bg\.png\'\)\] {
     background-image: url('/assets/site/bg.png');
+  }
+  .bg-\[url\(\'\/assets\/site\/bg2\.png\'\)\] {
+    background-image: url('/assets/site/bg2.png');
   }
   .bg-\[length\:64px_64px\] {
     background-size: 64px 64px;
@@ -810,6 +816,11 @@
     @media (width >= 64rem) {
       width: calc(1/2 * 100%);
     }
+  }
+  .foxe-diamonds-bg {
+    background-image: url('/assets/site/bg2.png');
+    background-size: 64px 64px;
+    background-repeat: repeat;
   }
 }
 @property --tw-translate-x {

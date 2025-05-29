@@ -67,4 +67,9 @@
 	{
 		@apply lg:w-1/2 flex items-center justify-center
 	}
+
+	.foxe-diamonds-bg
+	{
+		@apply bg-[url('/assets/site/bg2.png')] bg-[length:64px_64px] bg-repeat
+	}
 }
