@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
 @import "tailwindcss";
 
 @font-face {
@@ -14,8 +16,10 @@
 	--color-foxe-medium: #212123;
 	--color-foxe-light: #E3E3E3;
 	--color-foxe-accent: #E60076;
-
+	
 	--font-hyperflex: "Unispace", sans-serif;
+	--font-monofoxe: "Lexend", sans-serif;
+	--color-monofoxe-accent: #F7B23B;
 }
 
 @layer components 

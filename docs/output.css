@@ -1,5 +1,6 @@
 /*! tailwindcss v4.1.7 | MIT License | https://tailwindcss.com */
 @import url("https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -22,6 +23,7 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
+    --font-weight-light: 300;
     --font-weight-normal: 400;
     --font-weight-bold: 700;
     --radius-2xl: 1rem;
@@ -37,6 +39,8 @@
     --color-foxe-light: #E3E3E3;
     --color-foxe-accent: #E60076;
     --font-hyperflex: "Unispace", sans-serif;
+    --font-monofoxe: "Lexend", sans-serif;
+    --color-monofoxe-accent: #F7B23B;
   }
 }
 @layer base {
@@ -230,6 +234,9 @@
   .my-0 {
     margin-block: calc(var(--spacing) * 0);
   }
+  .my-8 {
+    margin-block: calc(var(--spacing) * 8);
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -296,6 +303,9 @@
   .h-10\.5 {
     height: calc(var(--spacing) * 10.5);
   }
+  .h-12 {
+    height: calc(var(--spacing) * 12);
+  }
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
@@ -343,6 +353,14 @@
   }
   .border-collapse {
     border-collapse: collapse;
+  }
+  .-translate-y-1 {
+    --tw-translate-y: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1\/2 {
+    --tw-translate-y: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-full {
     --tw-translate-y: -100%;
@@ -452,9 +470,6 @@
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
   }
-  .pt-8 {
-    padding-top: calc(var(--spacing) * 8);
-  }
   .pt-14 {
     padding-top: calc(var(--spacing) * 14);
   }
@@ -488,6 +503,9 @@
   .font-hyperflex {
     font-family: var(--font-hyperflex);
   }
+  .font-monofoxe {
+    font-family: var(--font-monofoxe);
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -516,6 +534,10 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+  .font-light {
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
+  }
   .font-normal {
     --tw-font-weight: var(--font-weight-normal);
     font-weight: var(--font-weight-normal);
@@ -528,6 +550,9 @@
   }
   .text-foxe-medium {
     color: var(--color-foxe-medium);
+  }
+  .text-monofoxe-accent {
+    color: var(--color-monofoxe-accent);
   }
   .underline {
     text-decoration-line: underline;
