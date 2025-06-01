@@ -388,9 +388,6 @@
   .bg-\[url\(\'\/assets\/site\/bg\.png\'\)\] {
     background-image: url('/assets/site/bg.png');
   }
-  .bg-\[url\(\'\/assets\/site\/bg2\.png\'\)\] {
-    background-image: url('/assets/site/bg2.png');
-  }
   .bg-\[length\:64px_64px\] {
     background-size: 64px 64px;
   }
