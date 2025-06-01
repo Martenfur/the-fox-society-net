@@ -48,11 +48,11 @@
 
 	.foxe-article-container
 	{
-		@apply w-screen lg:h-112 flex flex-col lg:flex-row
+		@apply w-screen lg:h-112 flex flex-col lg:flex-row mt-16 lg:mt-0
 	}
 	.foxe-article-container-reverse
 	{
-		@apply w-screen lg:h-112 flex flex-col lg:flex-row-reverse
+		@apply w-screen lg:h-112 flex flex-col lg:flex-row-reverse mt-16 lg:mt-0
 	}
 	.foxe-article-img-container
 	{
