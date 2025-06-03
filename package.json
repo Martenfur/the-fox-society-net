@@ -1,16 +1,20 @@
 {
-  "dependencies": {
-    "@tailwindcss/cli": "^4.1.7",
-    "tailwindcss": "^4.1.7"
-  },
-  "devDependencies": {
-    "concurrently": "^9.1.2",
-    "vite": "^6.3.5"
-  },
-  "scripts": {
-    "ssg": "node ssg.js",
-    "vite": "vite docs --host",
-    "tailwind": "tailwindcss -i src/pages/input.css -o docs/output.css -w",
-    "dev": "concurrently \"npm run ssg\" \"npm run tailwind\" \"npm run vite\""
-  }
+	"dependencies": 
+	{
+		"@tailwindcss/cli": "^4.1.7",
+		"tailwindcss": "^4.1.7"
+	},
+	"devDependencies": 
+	{
+		"concurrently": "^9.1.2",
+		"vite": "^6.3.5"
+	},
+	"scripts": 
+	{
+		"ssg": "node ssg.js",
+		"vite": "vite docs --host",
+		"tailwind": "tailwindcss -i src/pages/input.css -o docs/output.css -w",
+		"dev": "concurrently \"npm run ssg\" \"npm run tailwind\" \"npm run vite\"",
+		"release": "tailwindcss -i src/pages/input.css -o docs/output.css -m"
+	}
 }
