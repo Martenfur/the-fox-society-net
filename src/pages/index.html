@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+<head>
+	{{meta}}
+	<title>the fox society</title>
+</head>
+
+{{header}}
+
+<body class="bg-foxe-dark text-foxe-light font-foxe min-h-screen flex flex-col overflow-x-hidden">
+	<main class="py-0 flex-grow pb-32 font-hyperflex">
+		<!-- Hyperflex Banner -->
+		<div class="foxe-banner-container">
+			<a href="https://store.steampowered.com/app/3688000" target="_blank">
+				<!-- Fallback banner in case the video doesn't work in every case. -->
+				<!--img src="/assets/hf/banner.png" class="foxe-banner" alt="banner" /-->
+				<video class="foxe-banner" muted autoplay playsinline loop preload="auto">
+					<source src="/assets/hf/trailer.webm" type="video/webm" />
+				</video>
+
+				<img src="/assets/hf/logo.png" class="foxe-banner-logo" alt="logo" />
+			</a>
+		</div>
+
+		{{hf_wishlist_button}}
+
+		<div class="foxe-article-container">
+			<div class="foxe-article-text-container">
+				<div class="text-left p-8 lg:p-32">
+					<h1 class="text-4xl font-bold mb-4">Get ready to FLEX</h1>
+					<p class="text-lg">
+						Dodge obstacles, switch gravity in ways you never even knew were possible 
+						and see just how hard you can FLEX in this endless runner. 
+					</p>
+				</div>
+			</div>
+
+			<div class="foxe-article-img-container">
+				<img src="/assets/hf/screenshot1.png" alt="screenshot" class="w-full h-full object-cover" />
+			</div>
+		</div>
+
+		<div class="foxe-article-container-reverse">
+			<div class="foxe-article-text-container">
+				<div class="text-left p-8 lg:p-32">
+					<h1 class="text-4xl font-bold mb-4">SWEAT or FLOW</h1>
+					<p class="text-lg">
+						Whether you want to aim for the longest FLEX or just FLEX for fun, Hyperflex ULTRA has something for you.
+						Once you find the FLOW there will be no stopping. 
+					</p>
+				</div>
+			</div>
+
+			<div class="foxe-article-img-container-reverse">
+				<img src="/assets/hf/screenshot2.png" alt="screenshot" class="w-full h-full object-cover" />
+			</div>
+		</div>
+
+		<div class="foxe-article-container">
+			<div class="foxe-article-text-container">
+				<div class="text-left p-8 lg:p-32">
+					<h1 class="text-4xl font-bold mb-4">Keep it FRESH</h1>
+					<p class="text-lg">
+						Each level is randomly generated with its own unique twist, keeping your FLEXING fresh and challenging. 
+					</p>
+				</div>
+			</div>
+
+			<div class="foxe-article-img-container">
+				<img src="/assets/hf/screenshot3.png" alt="screenshot" class="w-full h-full object-cover" />
+			</div>
+		</div>
+
+		{{hf_wishlist_button}}
+
+		<a href="/" class="text-foxe-medium flex items-center justify-center hidden">
+			<img src="/assets/hf/watcher.png" class="h-4"></img>
+		</a>
+
+	</main>
+
+	{{footer}}
+
+
+</body>
+
+</html>

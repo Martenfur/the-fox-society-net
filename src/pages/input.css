@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Unispace";
+  src: url("/assets/hf/unispace-bd.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme {
+	--font-foxe: "Asul", sans-serif;
+	--color-foxe-dark: #131314;
+	--color-foxe-medium: #212123;
+	--color-foxe-light: #E3E3E3;
+	--color-foxe-accent: #E60076;
+	
+	--font-hyperflex: "Unispace", sans-serif;
+	--font-monofoxe: "Lexend", sans-serif;
+	--color-monofoxe-accent: #F7B23B;
+}
+
+@layer components 
+{
+	.foxe-header-crown 
+	{
+		@apply absolute left-1/2 top-0 transform -translate-x-1/2 translate-y-[-1.5rem] scale-0 opacity-0 group-hover:translate-y-[-2.0rem] group-hover:scale-100 group-hover:opacity-100 transition-transform duration-50 ease-out h-3.5 w-auto select-none;
+	}
+	.foxe-header-link
+	{
+		@apply hover:text-foxe-accent transition-colors duration-75 ease-out
+	}
+	.foxe-banner-container
+	{
+		@apply relative w-screen lg:h-96 h-56 overflow-hidden select-none
+	}
+	.foxe-banner
+	{
+		@apply absolute top-0 left-1/2 h-full -translate-x-1/2 object-cover min-w-full
+	}
+	.foxe-banner-logo
+	{
+		@apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-3/5 h-auto w-auto lg:max-h-128 max-h-70 px-16
+	}
+
+	.foxe-link-button
+	{
+		@apply transform transition-transform duration-200 hover:scale-105 ease-out
+	}
+
+	.foxe-article-container
+	{
+		@apply w-screen lg:h-112 flex flex-col lg:flex-row mt-16 lg:mt-0
+	}
+	.foxe-article-container-reverse
+	{
+		@apply w-screen lg:h-112 flex flex-col lg:flex-row-reverse mt-16 lg:mt-0
+	}
+	.foxe-article-img-container
+	{
+		@apply lg:w-1/2 lg:pr-16 py-8
+	}
+	.foxe-article-img-container-reverse
+	{
+		@apply lg:w-1/2 lg:pl-16 py-8
+	}
+	
+	.foxe-article-text-container
+	{
+		@apply lg:w-1/2 flex items-center justify-center
+	}
+
+	.foxe-diamonds-bg
+	{
+		@apply bg-[url('/assets/site/bg2.png')] bg-[length:64px_64px] bg-repeat
+	}
+}
