@@ -1,7 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
-
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Asul";
+  src: url("/assets/site/Asul-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Asul";
+  src: url("/assets/site/Asul-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lexend";
+  src: url("/assets/site/Lexend-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
   font-family: "Unispace";
